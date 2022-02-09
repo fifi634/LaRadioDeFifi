@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- meta -->
+        <meta charset="UTF-8" />
+        <title>la Radio de Fifi</title>    
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" type="image/png" href="ressources/favicon-2020.svg"/>
+        <!-- Mise en page Smartphone -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Meta pour moteurs de recherches -->
+        <meta name=description content="Webradio 100% musicale, sans publicité. Découvertes et souvenirs vous attendent sur notre antenne.">
+        <!-- facebook -->
+        <meta property og:title content="la radio de fifi" />
+        <meta property og:type content="website" />
+        <meta property og:url content="https://laradiodedfifi.fr" />
+        <meta property og:image content="ressources/favicon-2020.svg" />
+        <meta property og:description content="La webradio musicale qui vous propose de la musique alternative à ce que vous pouvez écouter dans les médias traditionnels. Découvertes et souvenirs vous attendent sur notre antenne, bonne écoute 🙂" />
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="https://laradiodefifi.fr" />
+        <meta name="twitter:title" content="la radio de fifi" />
+        <meta name="twitter:description" content="La webradio musicale qui vous propose de la musique alternative à ce que vous pouvez écouter dans les médias traditionnels. Découvertes et souvenirs vous attendent sur notre antenne, bonne écoute 🙂" />
+        <meta name="twitter:creator" content="@LaRadioDeFifi" />
+        <meta name=twitter:image content="ressources/partage.png" />
+        <!-- fin meta -->
+    </head>
+    <body>
+        <div id='PageCentrale'>            
+            <header>
+                <!-- menu top-->
+                <div class=bandeau-menu>
+                    <div id=menu>                        
+                        <!-- LOGO -->
+                        <div class=bloc_logo>                                         
+                            <a href="index.html"><img class=logo src="ressources/logo-titre-milieu-2-2020.svg" width="645" height="340" alt="logo la radio de fifi" /></a>
+                        </div>
+                        <!-- PLAYER -->
+                        <div class=bloc_player>                                           
+                            <!-- TITRE -->                    
+                            <h4 class=en_ce_moment>En ce moment :</h4>
+                            <iframe title="titre en cours de lecture" class=iframe-titre src="titre_direct.html" style="border:0px" scrolling="no" width='400' height='60'></iframe>
+                            <audio id=player controls="controls"><source src="https://laradiodefifi.ice.infomaniak.ch/laradiodefifi-192.mp3" type="audio/mpeg">Il serait temps de mettre votre navigateur à jours ;)</audio>                    
+                        </div>
+                        <!-- MENU -->
+                        <nav>               
+                            <ul>
+                                <li><a href="https://laradiodefifi.fr">Accueil</a></li>
+                                <li><a href="https://laradiodefifi.fr/topdefifi/">Le Top de Fifi</a></li>
+                                <li><a href="https://laradiodefifi.fr/category/coup-de-coeur/">Les coups de coeurs</a></li>
+                                <li><a href="https://laradiodefifi.fr/category/les-playlists-de-fifi/">Les Playlists de Fifi</a></li>
+                                <li><a href="https://laradiodefifi.fr/contact/">Contact</a></li>
+                            </ul>
+                        </nav>                        
+                    </div>
+                </div>
+                <!-- fin menu top -->   
+            </header>
+            <div class="acceuil-container">
+                <div class="inner-accueil">                    
+                    <!-- description-->
+                    <section class="description">
+                        <h1>Bienvenue sur la Radio de Fifi</h1>
+                        <p>La <strong>webradio musicale</strong> qui vous propose de la musique alternative à ce que vous pouvez écouter dans les médias traditionnels. <mark>Découvertes et souvenirs</mark> vous attendent sur notre antenne, bonne écoute 🙂</p>
+                    </section>
+                    <hr class=separateur>                    
+                    <!-- PLAYER + En ce moment -->
+                    <div class=bloc_player>
+                        <p class=en_ce_moment>En ce moment :</p>
+                            <iframe title="titre en cours de lecture" src="titre_direct.html" class=iframe-titre style="border:0px" scrolling="no" width='400' height='60'></iframe>
+                            <audio id=player controls="controls"><source src="https://laradiodefifi.ice.infomaniak.ch/laradiodefifi-192.mp3" type="audio/mpeg">Il serait temps de mettre votre navigateur à jours ;)</audio>                    
+                    </div>                    
+                    <hr class=separateur>                    
+                    <!-- Lien VLC / Winamp ... -->
+                    <section class="VLC">
+                        <p>La Radio de Fifi dans votre lecteur préféré (VLC, Winamp ...)</p>
+                        <a href="https://laradiodefifi.ice.infomaniak.ch/laradiodefifi-192.m3u">https://laradiodefifi.ice.infomaniak.ch/laradiodefifi-192.mp3</a>
+                    </section>                    
+                    <hr class=separateur>
+                    <!-- Liens vers annuaires -->
+                    <div class="annuaires">
+                        <p>Retrouvez la Radio de Fifi sur différents annuaires sur internet et mobile : </br>
+                            <a href="http://radio.garden/listen/la-radio-de-fifi/KsksczWD" target="_blank" rel="noreferrer">Radio Garden</a>
+                            <a href="http://www.webradio.media/ecouter-La-Radio-De-Fifi-3744" target="_blank" rel="noreferrer">Webradio Media</a>, 
+                            <a href="https://www.radio.fr/s/laradiodefifi" target="_blank" rel="noreferrer">Radio.fr</a>, 
+                            <a href="https://mytuner-radio.com/radio/la-radio-de-fifi-453043/" target="_blank" rel="noreferrer">My Tuner</a>
+                        </p>
+                    </div>                    
+                    <hr class=separateur>                    
+                    <!-- Avertissement -->
+                    <section class="parental_advisory">
+                        <p><img src="ressources/parental-advisory.png" alt="avertissement parental">Certains titres diffusés ne conviennent pas à un jeune public.</p>
+                    </section>
+                </div>            
+                <!-- player Pop-up -->
+                <aside class="player-pop-up">
+                    <a href="#" onclick="window.open('https://www.laradiodefifi.fr/player','player','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=644, height=264');return(false)"><h5>Ecouter</br> la Radio de Fifi</br>dans son player</h5></a>
+                    <a href="#" onclick="window.open('https://www.laradiodefifi.fr/player','player','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=644, height=264');return(false)"><img src="ressources/play.png" alt="écouter la radio de fifi dans un player externe"></a>
+                </aside>
+                <!-- Facebook -->
+                <aside class="facebook">
+                    <iframe title="Page Facebook de la Radio de Fifi" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flaradiodefifi&tabs=timeline&width=340&height=840&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="350" height="840" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </aside>
+            </div>
+            <!-- bandeau cookies  --
+            <footer class=bandeau_cookie>
+                <div id="cookie-notice" role="banner" class="cookie-notice-hidden cookie-revoke-hidden cn-position-bottom" aria-label="Cookie Notice" style="background-color: rgba(0,0,0,1);">
+                    <div class="cookie-notice-container" style="color: #fff;">
+                        <span id="cn-notice-text" class="cn-text-container">Nous utilisons des cookies pour vous garantir la meilleure expérience sur notre site. Ces cookies n'ont aucun but commercial, nous les utilisons à des fins statistiques, sociales et technique. Ils seront stocké pendant 1 mois.</span>
+                        <span id="cn-notice-buttons" class="cn-buttons-container"><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button bootstrap button" aria-label="J'accepte">J'accepte</a><a href="#" id="cn-refuse-cookie" data-cookie-set="refuse" class="cn-set-cookie cn-button bootstrap button" aria-label="Je refuse">Je refuse</a><a href="https://laradiodefifi.fr/cookie-policy/" target="_blank" id="cn-more-info" class="cn-more-info cn-button bootstrap button" aria-label="En savoir plus">En savoir plus</a></span>
+                        <a href="javascript:void(0);" id="cn-close-notice" data-cookie-set="accept" class="cn-close-icon" aria-label="J'accepte"></a>
+                    </div>
+                </div>
+		    </footer>
+            !-- fin bandeau cookie -->
+        </div>
+    </body>
+</html>
